@@ -1,16 +1,32 @@
-# React + Vite
+# Telecom & Server Solutions - Catálogo E-commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
+Proyecto desarrollado para la evaluación del Módulo 2 de React. Consiste en un catálogo interactivo de hardware y equipos de telecomunicaciones. La aplicación permite visualizar equipos de infraestructura, filtrar por nombre en tiempo real, interactuar con las imágenes mediante un zoom dinámico y simular la selección de equipos a través de un contador individual por producto.
 
-Currently, two official plugins are available:
+## Componentes Creados
+El proyecto aplica buenas prácticas de separación de responsabilidades a través de 6 componentes ubicados en la carpeta `/src/components`:
+* **Header:** Encabezado con identidad visual del catálogo.
+* **SearchBar:** Input controlado que gestiona el estado de búsqueda general.
+* **ProductList:** Contenedor dinámico que renderiza la lista de productos filtrados usando `map`.
+* **ProductCard:** Tarjeta que muestra la información recibida por *props* y maneja estados locales (`useState`) para la animación de la imagen y la cantidad seleccionada.
+* **Button:** Botón reutilizable que acepta variantes de estilo (`primary` / `secondary`) y funciones manejadoras de eventos.
+* **Footer:** Pie de página con información del estudiante y derechos del proyecto.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tecnologías Usadas
+* React (Vite)
+* JavaScript (JSX)
+* CSS (Estilos en línea y estructura base)
+* Local JSON (Simulación de persistencia de datos)
 
-## React Compiler
+## Instrucciones para ejecutar el proyecto
+1. Clonar este repositorio en tu equipo local.
+2. Abrir la terminal en la raíz de la carpeta clonada.
+3. Ejecutar el comando `npm install` para instalar las dependencias de Node.
+4. Ejecutar el comando `npm run dev` para iniciar el entorno de desarrollo.
+5. Abrir en el navegador la ruta local que indique la terminal (por defecto `http://localhost:5174/`).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Capturas de Pantalla
 
-## Expanding the ESLint configuration
+![Vista General de los equipos](./pantalla1.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Filtro de búsqueda e interacciones del carrito](./pantalla2.png)
