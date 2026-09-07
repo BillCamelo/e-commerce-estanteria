@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Servidor Dell PowerEdge R740",
+    "price": 2500000,
+    "category": "Servidores",
+    "image": "/servidor.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Antena Sectorial Ubiquiti",
+    "price": 185000,
+    "category": "Telecomunicaciones",
+    "image": "/antena.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Switch Cisco Catalyst 48 Puertos",
+    "price": 850000,
+    "category": "Redes",
+    "image": "/switch.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Gabinete Rack Datacenter 42U",
+    "price": 450000,
+    "category": "Infraestructura",
+    "image": "/rack.jpg.png"
+  }
+]
