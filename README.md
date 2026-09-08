@@ -1,32 +1,27 @@
-# Telecom & Server Solutions - Catálogo E-commerce
+# E-commerce Estantería - Telecom & Servers
 
 ## Descripción
-Proyecto desarrollado para la evaluación del Módulo 2 de React. Consiste en un catálogo interactivo de hardware y equipos de telecomunicaciones. La aplicación permite visualizar equipos de infraestructura, filtrar por nombre en tiempo real, interactuar con las imágenes mediante un zoom dinámico y simular la selección de equipos a través de un contador individual por producto.
+Esta es mi entrega para la evaluación del Módulo 2 de React. Es un catálogo de equipos de telecomunicaciones donde simulo el listado de productos consumiendo un archivo JSON local. 
 
-## Componentes Creados
-El proyecto aplica buenas prácticas de separación de responsabilidades a través de 6 componentes ubicados en la carpeta `/src/components`:
-* **Header:** Encabezado con identidad visual del catálogo.
-* **SearchBar:** Input controlado que gestiona el estado de búsqueda general.
-* **ProductList:** Contenedor dinámico que renderiza la lista de productos filtrados usando `map`.
-* **ProductCard:** Tarjeta que muestra la información recibida por *props* y maneja estados locales (`useState`) para la animación de la imagen y la cantidad seleccionada.
-* **Button:** Botón reutilizable que acepta variantes de estilo (`primary` / `secondary`) y funciones manejadoras de eventos.
-* **Footer:** Pie de página con información del estudiante y derechos del proyecto.
+## Componentes creados
+Separé la interfaz en 6 componentes (ubicados en `/src/components`):
+- **Header:** Logo y título de la tienda.
+- **SearchBar:** El input controlado para buscar equipos.
+- **ProductList:** Renderiza la lista filtrada usando `.map`.
+- **ProductCard:** Recibe las props (nombre, precio, imagen) y usa `useState` para manejar el contador de productos.
+- **Button:** Botón reutilizable.
+- **Footer:** Información básica del proyecto.
 
-## Tecnologías Usadas
-* React (Vite)
-* JavaScript (JSX)
-* CSS (Estilos en línea y estructura base)
-* Local JSON (Simulación de persistencia de datos)
+## Tecnologías usadas
+- React + Vite
+- CSS estándar
+- JSON (para los datos falsos de los productos)
 
-## Instrucciones para ejecutar el proyecto
-1. Clonar este repositorio en tu equipo local.
-2. Abrir la terminal en la raíz de la carpeta clonada.
-3. Ejecutar el comando `npm install` para instalar las dependencias de Node.
-4. Ejecutar el comando `npm run dev` para iniciar el entorno de desarrollo.
-5. Abrir en el navegador la ruta local que indique la terminal (por defecto `http://localhost:5174/`).
+## Ejecutar el proyecto localmente
+1. Clonar el repositorio.
+2. Instalar dependencias con: `npm install`
+3. Levantar el servidor con: `npm run dev`
 
-## Capturas de Pantalla
-
-![Vista General de los equipos](./pantalla1.png)
-
-![Filtro de búsqueda e interacciones del carrito](./pantalla2.png)
+## Capturas de pantalla
+![Vista general](./pantalla1.png)
+![Buscador y contador](./pantalla2.png)
