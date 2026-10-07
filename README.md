@@ -1,27 +1,18 @@
-# E-commerce Estantería - Telecom & Servers
+# Proyecto E-commerce React
 
-## Descripción
-Esta es mi entrega para la evaluación del Módulo 2 de React. Es un catálogo de equipos de telecomunicaciones donde simulo el listado de productos consumiendo un archivo JSON local. 
+Esta es mi entrega final para el proyecto de la tienda usando React. La aplicación se conecta a la API de DummyJSON para descargar los productos y mostrarlos en pantalla.
 
-## Componentes creados
-Separé la interfaz en 6 componentes (ubicados en `/src/components`):
-- **Header:** Logo y título de la tienda.
-- **SearchBar:** El input controlado para buscar equipos.
-- **ProductList:** Renderiza la lista filtrada usando `.map`.
-- **ProductCard:** Recibe las props (nombre, precio, imagen) y usa `useState` para manejar el contador de productos.
-- **Button:** Botón reutilizable.
-- **Footer:** Información básica del proyecto.
+## Cosas que implementé según la rúbrica:
+- Uso de `useState` y `useEffect`.
+- Fetch clásico a la API obligatoria (`https://dummyjson.com/products`).
+- Barra de búsqueda para filtrar los productos en tiempo real.
+- Componentes ordenados en sus propias carpetas (Header, SearchBar, ProductCard, etc.) con sus archivos CSS independientes.
+- Contador funcional para el carrito de compras.
+- Diseño responsivo en cuadrícula de 3 columnas.
 
-## Tecnologías usadas
-- React + Vite
-- CSS estándar
-- JSON (para los datos falsos de los productos)
+## Para revisar el proyecto:
+1. Abre la terminal en la carpeta raíz del proyecto.
+2. Ejecuta `npm install` para que se instalen las dependencias.
+3. Ejecuta `npm run dev` para levantar el servidor local y ver la página.
 
-## Ejecutar el proyecto localmente
-1. Clonar el repositorio.
-2. Instalar dependencias con: `npm install`
-3. Levantar el servidor con: `npm run dev`
-
-## Capturas de pantalla
-![Vista general](./pantalla1.png)
-![Buscador y contador](./pantalla2.png)
+Autor: Bill Camelo

@@ -1,0 +1,33 @@
+.header-tienda {
+  background-color: #1f2937;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-textos {
+  text-align: left;
+}
+
+.header-titulo {
+  margin: 0 0 10px 0;
+  font-size: 28px;
+}
+
+.header-subtitulo {
+  margin: 0;
+  font-size: 16px;
+  color: #e5e7eb;
+}
+
+.header-carrito {
+  background-color: #4f46e5;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
